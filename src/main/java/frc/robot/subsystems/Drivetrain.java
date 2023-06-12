@@ -65,7 +65,7 @@ public class Drivetrain extends SubsystemBase{
     rightMaster.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Absolute, 0, 20);
 
     rightMaster.setSensorPhase(true);
-
+    leftMaster.setSensorPhase(true);
     rightGroup.setInverted(true);
     leftGroup.setInverted(false);
 

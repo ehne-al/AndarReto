@@ -5,7 +5,8 @@
 package frc.robot;
 
 import frc.robot.Constants.*;
-import frc.robot.commands.Drive;
+import frc.robot.commands.DriveCTRE;
+import frc.robot.commands.DriveWPI;
 import frc.robot.subsystems.Drivetrain;
 import java.util.List;
 
@@ -46,7 +47,8 @@ public class RobotContainer {
     //         rotLimiter.calculate(controller.getRightX())*3), drivetrain
     //     )
     // );
-    drivetrain.setDefaultCommand(new Drive(drivetrain));
+    drivetrain.setDefaultCommand(new DriveCTRE(drivetrain));
+    //drivetrain.setDefaultCommand(new DriveWPI(drivetrain));
 
   }
 
